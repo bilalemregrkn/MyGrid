@@ -44,9 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0992e61fa9319734db60ed327da033c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridType: 1
   axisType: 0
-  tilePrefab: {fileID: 6888693267150226510, guid: 51c27b5d60b56e441a2b2b0a0f7484dd, type: 3}
+  gridSetting: {fileID: 11400000, guid: 3d3f5877e2a081744a642a6d57d19cf0, type: 2}
   size: {x: 3, y: 3}
-  distance: 1.25
-  changeDistance: 0
-  listTile: []
+  distance: {x: 1.25, y: 1.25}
+  listTile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

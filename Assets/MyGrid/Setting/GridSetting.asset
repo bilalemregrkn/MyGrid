@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0cd849529244b4a8dd4512eca55c50, type: 3}
+  m_Name: GridSetting
+  m_EditorClassIdentifier: 
+  rectangle:
+    prefab: {fileID: 6888693267150226510, guid: 51c27b5d60b56e441a2b2b0a0f7484dd, type: 3}
+    distance: {x: 2, y: 1.25}
+  hexagon:
+    prefab: {fileID: -2259680264830251454, guid: b659038c459c9f14d86cd1b08266ea85, type: 3}
+    distance: {x: 1.25, y: 0.75}
+  custom:
+    prefab: {fileID: 0}
+    distance: {x: 1, y: 1}

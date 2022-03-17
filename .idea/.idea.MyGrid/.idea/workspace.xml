@@ -2,51 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c819cb7d-b200-46bc-926b-75b451e847ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/GridManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/GridManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/SetCenterPosition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/SetCenterPosition.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/TileController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/TileController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/ClusterInputManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyGrid.unitypackage" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Art.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Art/Hexagon.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Art/Hexagon.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridSetting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridSetting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/SetCenterPosition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/SetCenterPosition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/TileController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/TileController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile Hexagon.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile Hexagon.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/GridManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/GridManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/SetCenterPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/SetCenterPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/TileController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/TileController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +84,7 @@
       <updated>1646387495026</updated>
       <workItem from="1646387512199" duration="4651000" />
       <workItem from="1646394794185" duration="15000" />
+      <workItem from="1647524004752" duration="9813000" />
     </task>
     <servers />
   </component>
@@ -113,6 +94,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
