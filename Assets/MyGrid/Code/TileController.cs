@@ -23,6 +23,15 @@ namespace MyGrid
 			return data.tile;
 		}
 
+		public List<TileController> GetAllNeighbours()
+		{
+			var result = new List<TileController>();
+			foreach (var neighbour in neighbours)
+				result.Add(neighbour.tile);
+
+			return result;
+		}
+
 		public void PrepareNeighbour(List<TileData> data)
 		{
 			neighbours = new List<TileData>(data);
