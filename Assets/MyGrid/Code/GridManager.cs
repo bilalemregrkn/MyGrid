@@ -227,6 +227,14 @@ namespace MyGrid
 				{
 					var direction = (Direction)i;
 					var coordinate = tile.coordinate.GetCoordinate(direction);
+					
+					//One step more if hexagon and vertical
+					if (gridType == GridType.Hexagon)
+					{
+						if (direction is Direction.Down or Direction.Up)
+							coordinate = coordinate.GetCoordinate(direction);
+					}
+					
 					var neighbour = GetTile(coordinate);
 					if (!neighbour) continue;
 					data.Add(new TileData()
