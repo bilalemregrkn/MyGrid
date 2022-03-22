@@ -2,31 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c819cb7d-b200-46bc-926b-75b451e847ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Art.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Art/Hexagon.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Art/Hexagon.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridSetting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridSetting.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/SetCenterPosition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/SetCenterPosition.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/TileController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/TileController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile Hexagon.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile Hexagon.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridCreator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridCreator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridCreator.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridCreator.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/GridManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/GridManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/Tile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/SetCenterPosition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/SetCenterPosition.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/TileController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/TileController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Setting/GridSetting.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Setting/GridSetting.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +26,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="preview" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../MyHelper/Assets/App/Helpers/BoingButton.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25uqoWBxlCAmt6S2iKpr1Uq4LA9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,7 +96,23 @@
       <workItem from="1646387512199" duration="4651000" />
       <workItem from="1646394794185" duration="15000" />
       <workItem from="1647524004752" duration="9813000" />
+      <workItem from="1647953894502" duration="2000000" />
     </task>
+    <task id="LOCAL-00001" summary="- Hexagon System Neighbour BugFixed">
+      <created>1647613668114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647613668114</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- TileController =&gt; GetAllNeighbours()">
+      <created>1647613771725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647613771725</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,5 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="- Hexagon System Neighbour BugFixed" />
+    <MESSAGE value="- TileController =&gt; GetAllNeighbours()" />
+    <option name="LAST_COMMIT_MESSAGE" value="- TileController =&gt; GetAllNeighbours()" />
   </component>
 </project>

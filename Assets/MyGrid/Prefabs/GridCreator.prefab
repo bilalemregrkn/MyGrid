@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 241977454802335176}
   - component: {fileID: 6465766419514717931}
   m_Layer: 0
-  m_Name: GridManager
+  m_Name: GridCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,11 +47,4 @@ MonoBehaviour:
   gridType: 1
   axisType: 0
   gridSetting: {fileID: 11400000, guid: 3d3f5877e2a081744a642a6d57d19cf0, type: 2}
-  size: {x: 3, y: 3}
-  distance: {x: 1.25, y: 1.25}
-  listTile:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  size: {x: 5, y: 5}
