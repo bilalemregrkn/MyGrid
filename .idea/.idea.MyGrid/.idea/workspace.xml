@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c819cb7d-b200-46bc-926b-75b451e847ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridCreator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridCreator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridCreator.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridCreator.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/EditorWindowTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/EditorWindowTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Prefabs/GridManager.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Setting/GridSetting.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Setting/GridSetting.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
@@ -42,7 +34,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../MyHelper/Assets/App/Helpers/BoingButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../MyHelper/Assets/App/Helpers/BoingButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bilal/Documents/Unity_Project/_me/_packs/MyGrid/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/bilal/Documents/Unity_Project/_me/_packs/MyGrid/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -96,7 +91,9 @@
       <workItem from="1646387512199" duration="4651000" />
       <workItem from="1646394794185" duration="15000" />
       <workItem from="1647524004752" duration="9813000" />
-      <workItem from="1647953894502" duration="2000000" />
+      <workItem from="1647953894502" duration="2400000" />
+      <workItem from="1648105395944" duration="3621000" />
+      <workItem from="1650194183001" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="- Hexagon System Neighbour BugFixed">
       <created>1647613668114</created>
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647613771725</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="* Editor Scripting&#10;* GridCreator.cs/GridManager.cs">
+      <created>1647956626959</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647956626959</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,9 +137,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="- Hexagon System Neighbour BugFixed" />
     <MESSAGE value="- TileController =&gt; GetAllNeighbours()" />
-    <option name="LAST_COMMIT_MESSAGE" value="- TileController =&gt; GetAllNeighbours()" />
+    <MESSAGE value="* Editor Scripting&#10;* GridCreator.cs/GridManager.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Editor Scripting&#10;* GridCreator.cs/GridManager.cs" />
   </component>
 </project>
