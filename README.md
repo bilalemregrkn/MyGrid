@@ -1,6 +1,6 @@
 # Game Grid System
 
-An Unity Plugin for grid-base game
+Unity Plugin for the grid-based games
 
 This is MyGrid that helpful to make grid base games like Tetris, chess, cool isometric games, etc.
 It's so simple and useful. 
