@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c819cb7d-b200-46bc-926b-75b451e847ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/EditorWindowTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/EditorWindowTest.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Extension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Extension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Singleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Singleton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGrid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/GridCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGrid/Code/GridManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +36,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../MyHelper/Assets/App/Helpers/BoingButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/bilal/Documents/Unity_Project/_me/_packs/MyGrid/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/bilal/Documents/Unity_Project/_me/_packs/MyGrid/Assets/MyGrid/Code/Editor/GridCreatorEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Samurai/Assets/Script/Helpers/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,16 +49,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "WebServerToolWindowFactoryState": "false"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\pc\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\pc\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\pc\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\pc\Documents\My Unity Projects\MyGrid&quot; -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\pc\Documents\My Unity Projects\MyGrid" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\pc\Documents\My Unity Projects\MyGrid&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\pc\Documents\My Unity Projects\MyGrid" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -94,6 +114,7 @@
       <workItem from="1647953894502" duration="2400000" />
       <workItem from="1648105395944" duration="3621000" />
       <workItem from="1650194183001" duration="2296000" />
+      <workItem from="1670939846991" duration="4237000" />
     </task>
     <task id="LOCAL-00001" summary="- Hexagon System Neighbour BugFixed">
       <created>1647613668114</created>

@@ -3,26 +3,19 @@ using UnityEngine;
 
 namespace MyGrid
 {
-	public class GridManager : MonoBehaviour
-	{
-		public static GridManager Instance { get; private set; }
+    public class GridManager : Singleton<GridManager>
+    {
+        public List<TileController> Tiles => listTile;
+        [SerializeField] private List<TileController> listTile;
 
-		private void Awake()
-		{
-			Instance = this;
-		}
+        public TileController GetTile(Vector2Int coordinate)
+        {
+            return listTile.Find(item => item.coordinate == coordinate);
+        }
 
-		public List<TileController> Tiles => listTile;
-		[SerializeField] private List<TileController> listTile;
-
-		public TileController GetTile(Vector2Int coordinate)
-		{
-			return listTile.Find(item => item.coordinate == coordinate);
-		}
-
-		public void SetTiles(List<TileController> tiles)
-		{
-			listTile = tiles;
-		}
-	}
+        public void SetTiles(List<TileController> tiles)
+        {
+            listTile = tiles;
+        }
+    }
 }
