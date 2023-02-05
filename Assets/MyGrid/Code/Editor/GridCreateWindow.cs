@@ -1,38 +1,58 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MyGrid
+namespace MyGrid.Code.Editor
 {
-	public class GridCreateWindow : EditorWindow
-	{
-		[MenuItem("MyGrid/Display Window")]
-		static void Initialize()
-		{
-			//Get Old Gameobject
-			var old = Selection.activeObject;
+    public class GridCreateWindow : EditorWindow
+    {
+        private Vector2Int _size = new Vector2Int(5, 5);
+        private GridType _gridType;
+        private AxisType _axisType;
+        private TileSetting _setting;
+        private GridCreator _creator;
 
-			//Select
-			Selection.activeObject = AssetDatabase.LoadMainAssetAtPath("Assets/MyGrid/Prefabs/GridCreator.prefab");
-			EditorGUIUtility.PingObject(Selection.activeObject);
+        private const int MinGridSize = 1;
+        private const int MaxGridSize = 100;
+        private const string PathSetting = "Assets/MyGrid/Setting/TileSetting.asset";
 
-			//Create Inspector Panel
-			// Retrieve the existing Inspector tab, or create a new one if none is open
-			EditorWindow inspectorWindow = EditorWindow.GetWindow(typeof(Editor).Assembly.GetType("UnityEditor.InspectorWindow"));
-			// Get the size of the currently window
-			Vector2 size = new Vector2(inspectorWindow.position.width, inspectorWindow.position.height);
-			// Clone the inspector tab (optionnal step)
-			inspectorWindow = Instantiate(inspectorWindow);
-			// Set min size, and focus the window
-			inspectorWindow.minSize = size;
-			inspectorWindow.Show();
-			inspectorWindow.Focus();
+        [MenuItem("Tools/My Grid")]
+        public static void ShowWindow()
+        {
+            GetWindow<GridCreateWindow>("My Grid");
+        }
 
-			//Lock
-			ActiveEditorTracker.sharedTracker.isLocked = true;
-			ActiveEditorTracker.sharedTracker.ForceRebuild();
+        void OnEnable()
+        {
+            _setting = AssetDatabase.LoadAssetAtPath<TileSetting>(PathSetting);
+        }
+        
+        private void OnGUI()
+        {
+            EditorGUILayout.Space(20);
 
-			//Set old
-			Selection.activeObject = old;
-		}
-	}
+            _size = EditorGUILayout.Vector2IntField("Grid Size", _size);
+            _size.x = Mathf.Clamp(_size.x, MinGridSize, MaxGridSize);
+            _size.y = Mathf.Clamp(_size.y, MinGridSize, MaxGridSize);
+            EditorGUILayout.Space(5);
+
+            _gridType = (GridType)EditorGUILayout.EnumPopup("Grid Type", _gridType);
+            _axisType = (AxisType)EditorGUILayout.EnumPopup("Axis Type", _axisType);
+            EditorGUILayout.Space(5);
+
+            _setting = (TileSetting)EditorGUILayout.ObjectField("Setting", _setting, typeof(TileSetting));
+            EditorGUILayout.Space(20);
+
+            if (GUILayout.Button("Create"))
+            {
+                _creator = _creator ?? new GridCreator();
+                _creator.Create(_gridType, _axisType, _setting, _size, true);
+            }
+
+            if (GUILayout.Button("Create as Prefab"))
+            {
+                _creator = _creator ?? new GridCreator();
+                _creator.Create(_gridType, _axisType, _setting, _size, true);
+            }
+        }
+    }
 }

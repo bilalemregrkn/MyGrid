@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
-namespace MyGrid
+namespace MyGrid.Code
 {
     public enum GridType
     {
@@ -31,29 +32,12 @@ namespace MyGrid
     }
 
 
-    public class GridCreator : MonoBehaviour
+    public class GridCreator
     {
-        [SerializeField] private GridType gridType;
-        [SerializeField] private AxisType axisType;
-        [SerializeField] private GridSetting gridSetting;
-        [SerializeField] private Vector2Int size = new(3, 3);
-
-        [ContextMenu(nameof(CreateGrid))]
-        public void CreateGrid()
+        public void Create(GridType gridType,AxisType axisType,TileSetting setting,Vector2 size, bool createAsPrefab)
         {
-            Create(GetPrefab(), false);
-        }
-
-#if UNITY_EDITOR
-        [ContextMenu(nameof(CreateGridAsPrefab))]
-        public void CreateGridAsPrefab()
-        {
-            Create(GetPrefab(), true);
-        }
-#endif
-        
-        private void Create(TileController prefab, bool createAsPrefab)
-        {
+            var prefab = GetPrefab(gridType,setting);
+            
             //Create GridManager Object
             var gridManager = new GameObject
             {
@@ -62,14 +46,14 @@ namespace MyGrid
                     name = "Grid"
                 }
             }.AddComponent<GridManager>();
-
+            
             //Create Tiles
             var tiles = new List<TileController>();
             var tilePosition = Vector3.zero;
 
             for (int vertical = 0; vertical < size.y; vertical++)
             {
-                tilePosition = GetTilePosition(tilePosition, vertical, axisType);
+                tilePosition = GetTilePosition(tilePosition, vertical, axisType,gridType,setting);
 
                 for (int horizontal = 0; horizontal < size.x; horizontal++)
                 {
@@ -77,7 +61,7 @@ namespace MyGrid
                     if (!CanSpawn(gridType, coordinate))
                         continue;
 
-                    tilePosition.x = horizontal * GetDistance().x;
+                    tilePosition.x = horizontal * GetDistance(gridType,setting).x;
 
                     TileController tile = null;
                     if (createAsPrefab)
@@ -91,7 +75,7 @@ namespace MyGrid
                     }
                     else
                     {
-                        tile = Instantiate(prefab, tilePosition, Quaternion.identity);
+                        tile = Object.Instantiate(prefab, tilePosition, Quaternion.identity);
                     }
 
 
@@ -104,35 +88,35 @@ namespace MyGrid
             }
 
             gridManager.SetTiles(tiles);
-            SetNeighbor(gridManager);
+            SetNeighbor(gridManager,gridType);
             SetCenter(gridManager.gameObject);
         }
         
-        private TileController GetPrefab()
+        private TileController GetPrefab(GridType gridType,TileSetting tileSetting)
         {
             return gridType switch
             {
-                GridType.Rectangle => gridSetting.rectangle.prefab,
-                GridType.Hexagon => gridSetting.hexagon.prefab,
-                GridType.Custom => gridSetting.custom.prefab,
+                GridType.Rectangle => tileSetting.rectangle.prefab,
+                GridType.Hexagon => tileSetting.hexagon.prefab,
+                GridType.Custom => tileSetting.custom.prefab,
                 _ => null
             };
         }
 
-        private Vector2 GetDistance()
+        private Vector2 GetDistance(GridType gridType,TileSetting tileSetting)
         {
             return gridType switch
             {
-                GridType.Rectangle => gridSetting.rectangle.distance,
-                GridType.Hexagon => gridSetting.hexagon.distance,
-                GridType.Custom => gridSetting.custom.distance,
+                GridType.Rectangle => tileSetting.rectangle.distance,
+                GridType.Hexagon => tileSetting.hexagon.distance,
+                GridType.Custom => tileSetting.custom.distance,
                 _ => Vector2Int.zero
             };
         }
         
-        private Vector3 GetTilePosition(Vector3 position, int count, AxisType type)
+        private Vector3 GetTilePosition(Vector3 position, int count, AxisType type,GridType gridType,TileSetting setting)
         {
-            var axis = count * GetDistance().y;
+            var axis = count * GetDistance(gridType,setting).y;
             switch (type)
             {
                 case AxisType.XY:
@@ -166,9 +150,10 @@ namespace MyGrid
             var pivotHelper = parent.AddComponent<SetCenterPosition>();
             pivotHelper.SetCenter();
             parent.transform.position = Vector3.zero;
+            Object.DestroyImmediate(pivotHelper);
         }
         
-        private void SetNeighbor(GridManager manager)
+        private void SetNeighbor(GridManager manager, GridType gridType)
         {
             var length = Enum.GetNames(typeof(Direction)).Length;
             foreach (var tile in manager.Tiles)

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace MyGrid
+namespace MyGrid.Code
 {
     public static class Extension
     {

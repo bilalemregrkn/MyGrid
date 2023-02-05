@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MyGrid
+namespace MyGrid.Code
 {
     public class GridManager : Singleton<GridManager>
     {

@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace MyGrid
+namespace MyGrid.Code
 {
 	public class SetCenterPosition : MonoBehaviour
 	{

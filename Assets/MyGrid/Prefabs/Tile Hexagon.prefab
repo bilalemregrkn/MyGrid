@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6555669895882638829}
   - component: {fileID: 2187877725592511748}
   - component: {fileID: 2073316725060860171}
+  - component: {fileID: 4197888801482956756}
   - component: {fileID: -2259680264830251454}
   m_Layer: 0
   m_Name: Tile Hexagon
@@ -84,6 +85,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4197888801482956756
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4267909239658973268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 54bdb795a5ea8874bb929d67cfdcb677, type: 2}
 --- !u!114 &-2259680264830251454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,8 +111,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcde5c996e89a74d8eb3fc6b9edfad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  up: {fileID: 0}
-  down: {fileID: 0}
-  right: {fileID: 0}
-  left: {fileID: 0}
+  neighbours: []
   coordinate: {x: 0, y: 0}
