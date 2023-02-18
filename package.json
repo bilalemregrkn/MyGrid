@@ -1,0 +1,14 @@
+{
+  "name": "com.bilalemregrkn.mygrid",
+  "version": "1.3.0",
+  "displayName": "MyGrid",
+  "description": "Unity Plugin for the grid-based games.This is MyGrid that helpful to make grid base games like Tetris, chess, cool isometric games, etc. It's so simple and useful.",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "author": {
+    "name": "Bilal Emre Gurkan",
+    "email": "bilalemregrkn@gmail.com",
+    "url": "https://github.com/bilalemregrkn/MyGrid"
+  }
+}
