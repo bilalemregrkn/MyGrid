@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -9,8 +11,7 @@ namespace MyGrid.Code
     public enum GridType
     {
         Rectangle,
-        Hexagon,
-        Custom
+        Hexagon
     }
 
     public enum AxisType
@@ -98,7 +99,6 @@ namespace MyGrid.Code
             {
                 GridType.Rectangle => tileSetting.rectangle.prefab,
                 GridType.Hexagon => tileSetting.hexagon.prefab,
-                GridType.Custom => tileSetting.custom.prefab,
                 _ => null
             };
         }
@@ -109,7 +109,6 @@ namespace MyGrid.Code
             {
                 GridType.Rectangle => tileSetting.rectangle.distance,
                 GridType.Hexagon => tileSetting.hexagon.distance,
-                GridType.Custom => tileSetting.custom.distance,
                 _ => Vector2Int.zero
             };
         }
@@ -141,7 +140,6 @@ namespace MyGrid.Code
             {
                 GridType.Rectangle => true,
                 GridType.Hexagon => isPairHorizontal == isPairVertical,
-                GridType.Custom => true,
                 _ => throw new ArgumentOutOfRangeException(nameof(type), type, null)
             };
         }

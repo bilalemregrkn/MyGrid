@@ -14,7 +14,7 @@ namespace MyGrid.Code.Editor
 
         private const int MinGridSize = 1;
         private const int MaxGridSize = 100;
-        private const string PathSetting = "Packages/com.bilalemregrkn.MyGrid/Runtime/Setting/TileSetting.asset";
+        private const string PathSetting = "Packages/com.bilalemregrkn.MyGrid/Runtime/Setting/TileSetting-Default.asset";
 
         [MenuItem("Tools/My Grid")]
         public static void ShowWindow()

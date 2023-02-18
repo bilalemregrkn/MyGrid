@@ -3,12 +3,11 @@ using UnityEngine;
 
 namespace MyGrid.Code
 {
-	[CreateAssetMenu(menuName = "ScriptableObject/Create TileSetting", fileName = "TileSetting", order = 0)]
+	[CreateAssetMenu(menuName = "ScriptableObject/My Grid/Create TileSetting", fileName = "TileSetting", order = 0)]
 	public class TileSetting : ScriptableObject
 	{
 		public TileSettingData rectangle;
 		public TileSettingData hexagon;
-		public TileSettingData custom;
 	}
 
 	[Serializable]
