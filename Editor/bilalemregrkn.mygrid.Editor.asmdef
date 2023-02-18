@@ -1,0 +1,16 @@
+{
+    "name": "bilalemregrkn.mygrid.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:627e14784a492437caeca409b1ebd9ff"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
