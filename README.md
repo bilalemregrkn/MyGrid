@@ -5,12 +5,9 @@ Unity Plugin for the grid-based games
 This is MyGrid that helpful to make grid base games like Tetris, chess, cool isometric games, etc.
 It's so simple and useful. 
 
-![giphy](https://user-images.githubusercontent.com/28481044/158610037-ddbf7813-9cb9-4ca4-a150-f2c635f658b7.gif)
+![01 - grid - opti](https://user-images.githubusercontent.com/28481044/219943880-7078dd62-8bda-463e-a504-975be10b9ccd.gif)![02 - hex - opti](https://user-images.githubusercontent.com/28481044/219943889-8afb8047-5191-4915-aa2c-444cc9598f89.gif)
 
-
-also contains hexagon grid system ❤
-
-![giphy](https://user-images.githubusercontent.com/28481044/159025773-de70eb8b-8864-437f-8f72-a4b9e001cae7.gif)
+![03 - rect custom](https://user-images.githubusercontent.com/28481044/219943899-84e4eb88-e59c-4c3f-846c-dcdf2391739e.gif)![04 - hex custom - opti](https://user-images.githubusercontent.com/28481044/219944080-0f607136-6736-4050-9550-ea136a8d4fed.gif)
 
 ____________________________________
 
