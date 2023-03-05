@@ -78,8 +78,7 @@ namespace MyGrid.Code
                     {
                         tile = Object.Instantiate(prefab, tilePosition, Quaternion.identity);
                     }
-
-
+                    
                     if (tile == null) continue;
                     tile.transform.name = $"Tile [{horizontal},{vertical}]";
                     tile.coordinate = coordinate;
